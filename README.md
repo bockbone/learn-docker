@@ -31,3 +31,19 @@
   6. Show all containers including the stopped container
   
       `docker ps -a`
+   
+  7. Remove stopped container
+  
+      `docker rm [id]`
+      
+  8. Force removed running container
+
+      `docker rm -f [id]`
+      
+  9. Format the text when using `docker ps`
+      
+      `export FORMAT="ID\t{{.ID}}\nNAME\t{{.Names}}\nIMAGE\t{{.Image}}\nPORTS\t{{.Ports}}\nCOMMAND\t{{.Command}}\nCREATED\t{{.CreatedAt}}\nSTATUS\t{{.Status}}\n"`
+      
+      `docker ps --format=$FORMAT`
+   
+  10. 
