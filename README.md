@@ -17,4 +17,4 @@
       
   5. Show all containers including the stopped container
   
-    `docker ps -a`
+      `docker ps -a`
